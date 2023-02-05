@@ -8,6 +8,7 @@
     min-height: 100vh;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
+    /* background-size: cover; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,16 +26,16 @@
 }
 #scoreBox{
     position: absolute;
-    top: 9px;
-    right: 200px;
+    top: 2%;
+    right: 5%;
     font-size: 39px;
     font-weight: bold;
     font-family: 'New Tegomin',serif;
 }
 #hiscoreBox{
     position: absolute;
-    top: 59px;
-    right: 160px;
+    top: 8%;
+    right: 5%;
     font-size: 39px;
     font-weight: bold;
     font-family: 'New Tegomin',serif;
@@ -55,4 +56,14 @@
     border: .25vmin solid black;
     border-radius: 8px;
 }
-
+@media screen and (max-width: 1320px) {
+    #board{
+        width: 70vmin;
+        height: 70vmin;
+        border: 8px solid black;
+    }
+    .body{
+        background-size: cover;
+    }
+        
+}
